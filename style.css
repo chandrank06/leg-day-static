@@ -13,7 +13,20 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-body {   
+body {
   height: 100vh;
-  background: linear-gradient(45deg, #f24b4b -105%, #efefef 80%, #f24b4b 125%) no-repeat;
+  background: linear-gradient(45deg, #f24b4b -105%, #efefef 80%, #f24b4b 125%)
+    no-repeat;
+  overflow-x: hidden;
+}
+.greyStripWithText {
+  transform: rotate(65deg);
+  width: 100%;
+  right: -41.8%;
+}
+.x-Mark {
+  background: url("./assets/x-mark.svg") no-repeat;
+  position: absolute;
+  width: 10%;
+  height: 10%;
 }
