@@ -1,0 +1,19 @@
+.bebas-neue-regular {
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+}
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #f24b4b -105%, #efefef 80%, #f24b4b 125%) no-repeat;
+}
