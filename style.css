@@ -14,19 +14,120 @@
   font-style: normal;
 }
 body {
-  height: 100vh;
+  height: 120vh;
   background: linear-gradient(45deg, #f24b4b -105%, #efefef 80%, #f24b4b 125%)
     no-repeat;
   overflow-x: hidden;
 }
-.greyStripWithText {
-  transform: rotate(65deg);
+.cartIcon {
+  background: url(./assets/cart.svg) no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin: 30% 0 0 25%;
+}
+
+.trasparentParallelogramTop {
+  background: url(./assets/trasparentParallelogramTop.svg) no-repeat;
+  background: transparent;
+  width: 65%;
+  rotate: 100deg;
+  height: 30%;
+  position: absolute;
+  top: -75%;
+  left: 10%;
+  border: 1px solid #4a4a4a;
+  transform: skew(10deg, -30deg);
+  z-index: 1;
+}
+.orangeStripBig {
+  background: url(./assets/greyStripTop.svg) no-repeat;
+  background: #f24b4b;
   width: 100%;
-  right: -41.8%;
+  height: 45%;
+  position: absolute;
+  top: 0;
+  left: 21%;
+  transform: rotate(75deg) skew(-15deg, -5deg);
+  transform-origin: center;
+  top: 25%;
+}
+.greyStripTop {
+  background: url(./assets/greyStripTop.svg) no-repeat;
+  background: #4a4a4a;
+  width: 5%;
+  height: 3%;
+  position: absolute;
+  top: 0;
+  right: 23.5%;
+  transform: rotate(75deg) skew(-15deg, -5deg);
+}
+.greyStripBottom {
+  background: url(./assets/greyStripBottom.svg) no-repeat;
+  background: #4a4a4a;
+  width: 30%;
+  height: 3%;
+  position: absolute;
+  bottom: -20.1%;
+  right: 12.9%;
+  transform: rotate(75deg) skew(-15deg, -5deg);
+}
+.greyStripBig {
+  background: #4a4a4a;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  right: -44%;
+  transform: rotate(75deg) skew(-15deg, -5deg);
+  top: 98%;
+  transform-origin: center;
+}
+.greyStripWithText {
+  width: 100vh;
+  right: -8.5%;
+  transform: rotate(70deg);
+  white-space: nowrap;
 }
 .x-Mark {
   background: url("./assets/x-mark.svg") no-repeat;
   position: absolute;
   width: 10%;
   height: 10%;
+}
+.socialSection {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 0%;
+  top: 50%;
+  align-items: center;
+}
+.facebookLogo {
+  background: url(./assets/facebookLogo.svg) no-repeat !important;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(90deg);
+}
+.instagramLogo {
+  background: url(./assets/instagramLogo.svg) no-repeat !important;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(90deg);
+}
+.twitterLogo {
+  background: url(./assets/twitterLogo.svg) no-repeat !important;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(90deg);
+}
+.transparentTextOnLeft {
+  z-index: -1;
+  position: absolute;
+  transform: rotate(-90deg);
+  background: none;
+  opacity: 0.1;
+  color: #f3c9c9;
+  -webkit-text-stroke: red;
+  -webkit-text-stroke-width: 0.09rem;
+  font-size: 20rem;
+  top: 30%;
+  left: -12%;
 }
