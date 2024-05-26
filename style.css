@@ -27,76 +27,82 @@ body {
 }
 
 .trasparentParallelogramTop {
-  background: url(./assets/trasparentParallelogramTop.svg) no-repeat;
   background: transparent;
-  width: 65%;
-  rotate: 100deg;
-  height: 30%;
+  width: 17%;
+  height: 20%;
   position: absolute;
-  top: -75%;
-  left: 10%;
   border: 1px solid #4a4a4a;
-  transform: skew(10deg, -30deg);
   z-index: 1;
+  transform: skew(20deg) translate(260%, -20%);
+  top: 0;
 }
+
 .orangeStripBig {
-  background: url(./assets/greyStripTop.svg) no-repeat;
   background: #f24b4b;
-  width: 100%;
-  height: 45%;
+  width: 20%;
+  height: 100vh;
+  transform: skew(20deg, 0deg) translate(300%, 0%);
   position: absolute;
   top: 0;
-  left: 21%;
-  transform: rotate(75deg) skew(-15deg, -5deg);
-  transform-origin: center;
-  top: 25%;
 }
-.greyStripTop {
-  background: url(./assets/greyStripTop.svg) no-repeat;
-  background: #4a4a4a;
-  width: 5%;
-  height: 3%;
+.orangeStripBig::before {
+  content: "";
   position: absolute;
+  background: #4a4a4a;
+  width: 10%;
+  height: 10%;
+  transform: translateX(50%);
+  right: 0;
   top: 0;
-  right: 23.5%;
-  transform: rotate(75deg) skew(-15deg, -5deg);
+  transition: top 1s cubic-bezier(0.32, 0.48, 0, 0.94);
 }
-.greyStripBottom {
-  background: url(./assets/greyStripBottom.svg) no-repeat;
-  background: #4a4a4a;
-  width: 30%;
-  height: 3%;
+.orangeStripBig::after {
+  content: "";
   position: absolute;
-  bottom: -20.1%;
-  right: 12.9%;
-  transform: rotate(75deg) skew(-15deg, -5deg);
+  background: #4a4a4a;
+  width: 10%;
+  height: 10%;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
+  transition: bottom 1s cubic-bezier(0.32, 0.48, 0, 0.94);
+}
+.orangeStripBig:hover::before {
+  top: 90%;
+}
+.orangeStripBig:hover::after {
+  bottom: 90%;
+}
+.heroImg {
+  transition: transform 2s ease;
+}
+.heroImg:hover {
+  transform: scale(0.95);
 }
 .greyStripBig {
   background: #4a4a4a;
-  width: 100%;
-  height: 5%;
   position: absolute;
-  right: -44%;
-  transform: rotate(75deg) skew(-15deg, -5deg);
-  top: 98%;
-  transform-origin: center;
-}
-.greyStripWithText {
-  width: 100vh;
-  right: -8.5%;
-  transform: rotate(70deg);
+  overflow: hidden;
   white-space: nowrap;
+  right: 18%;
+  transform-origin: center;
+  width: 2%;
+  height: 100vh;
+  transform: skew(20deg, 0deg) translate(265%, 0%);
+  top: 0;
 }
+
 .x-Mark {
   background: url("./assets/x-mark.svg") no-repeat;
   position: absolute;
   width: 10%;
   height: 10%;
+  transition: transform 2s ease;
 }
 .socialSection {
   position: absolute;
   transform: rotate(-90deg);
-  right: 0%;
+  right: -2%;
   top: 50%;
   align-items: center;
 }
